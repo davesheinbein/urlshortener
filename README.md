@@ -67,16 +67,3 @@ Express, and MongoDB.
   corresponding to the given short URL.
 - **Response**: Redirects to the original URL or returns an
   error if the short URL is not found.
-
-## Example Usage
-
-1. Shorten a URL:
-
-   ```sh
-   curl -X POST -H "Content-Type: application/json" -d '{"url":"https://www.example.com"}' http://localhost:3000/api/shorturl
-   ```
-
-2. Redirect to the original URL:
-   ```sh
-   curl -L http://localhost:3000/api/shorturl/1
-   ```
